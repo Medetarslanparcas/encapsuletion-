@@ -1,0 +1,61 @@
+package test;
+
+public class Otomobil {
+private String renk;
+private String cant;
+private String model="audie";// pKJRGrivaNte ile değiştiremesin sınıf değişmez 
+private int en =4;
+private int boy =3;
+
+public void setRenk(String rng)
+{
+	this.renk=rng;
+		
+}public String getRenk() {
+	return this.renk;
+	
+}
+
+
+public void setCant(String cnt)
+{
+	this.cant=cnt;
+}
+public String getCant() {
+	return this.cant;
+	
+}
+ public String getModel()
+ {
+	 return this.model;
+ }
+ public int getEn() {
+	 return this.en;
+	 
+ }
+ public int getBoy() {
+	 return this.boy;
+ 
+ 
+}
+}
+/*yukarda daki asıl sınıf olan class**\
+//aşağıdakide main sınjıfı
+package test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Otomobil Otomobil1=new Otomobil();
+Otomobil1.setRenk("yeşil");
+Otomobil1.setCant("çelik");
+System.out.println(Otomobil1.getRenk() + "  " +Otomobil1.getCant() +"  "+ Otomobil1.getModel()+"  "+ Otomobil1.getEn() );
+Otomobil Otomobil2=new Otomobil();
+
+Otomobil2.setRenk("kırmızı");
+Otomobil2.setCant("normal ");
+System.out.println(Otomobil2.getRenk() + "  " +Otomobil2.getCant() +"  "+ Otomobil2.getModel() +"  "+ Otomobil2.getBoy());
+	}
+
+}
